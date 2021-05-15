@@ -62,3 +62,7 @@ class CharacterTemplate:
   def set_base_speed(self, speed):
     self.base_speed = speed
     return self
+
+if __name__ == "__main__":
+  name = input()
+
