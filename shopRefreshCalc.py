@@ -11,7 +11,7 @@ SS_cost = refresh_cost * refreshes
 BM_cost = 184000
 MM_cost = 280000
 
-action = input("What do you want to do? ")
+action = input("What do you want to do? 'state' or 'count'?")
 
 if action.lower() == 'stat' or action.lower() == 'stats':
 	mean = list(df.mean())
@@ -59,11 +59,11 @@ elif action.lower() == 'count':
 
 			elif inp.lower() == "b":
 				BM += 1
-				print(f"BM = {BM}.")
+				print(f"BM = {BM}. target: {target}.")
 
 			elif inp.lower() == "m":
 				MM += 1
-				print(f"MM = {MM}.")
+				print(f"MM = {MM}. target: {target}.")
 
 			else:
 				print("Unrecognized input. Please enter: 'b', 'm', or 'stop' only.")
