@@ -11,7 +11,7 @@ SS_cost = refresh_cost * refreshes
 BM_cost = 184000
 MM_cost = 280000
 
-action = input("What do you want to do? 'state' or 'count'?")
+action = input("What do you want to do? 'state' or 'count'? ")
 
 if action.lower() == 'stat' or action.lower() == 'stats':
 	mean = list(df.mean())
